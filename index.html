@@ -4,34 +4,15 @@
     <meta charset="utf-8">
     <title>Mockup Practice</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-            document.onkeydown = function() 
-                {
-                    var j = event.keyIdentifier
-                    if (j == "Right")
-                        window.location = nextUrl
-                    else if (j == "Left")
-                        window.location = prevUrl            
-                        }
-                   });
-
-      $(document).ready(function() {
-                    var nextPage = $("#next_page_link")
-                    var prevPage = $("#previous_page_link")
-                    nextUrl = nextPage.attr("href")
-                    prevUrl = prevPage.attr("href")
-                });
-    </script>
   </head>
     <!-- headline and main nav -->
     <header>
       <h1>Real Practice Content Week 4</h1>
+      <p>This page was published on <time datetime="2015-12-15 20:00">December 15</time>.</p>
       <nav>
         <ul>
-          <li><a id="previous_page_link" href="index.html">Welcome</a></li>
-          <li><a id="next_page_link" href="practice.html">Parctice</a></li>
+          <li><a href="index.html" accesskey="w">Welcome</a></li>
+          <li><a href="practice.html" accesskey="p">Parctice</a></li>
         </ul>
       </nav>
     </header>
